@@ -6,7 +6,7 @@
 
 // Standard Atmega2560 machines (No bootloader required)
 
-//#define MachineEnder5Plus
+#define MachineEnder5Plus
 //#define MachineEnder4
 //#define MachineCR20 //Buzzer doesnt work
 //#define MachineCR20Pro
@@ -50,7 +50,7 @@
    E3D Mounting assumes Groovemount
    Creality Mounting assumes bolt-on kit
 */
-//#define HotendStock
+#define HotendStock
 //#define HotendE3D
 //#define HotendMosquito
 
@@ -91,10 +91,10 @@
 */
 //#define ABL_EZABL // TH3D EZABL or Any NO Sensor
 //#define ABL_NCSW //Creality ABL or Any NC Sensor
-//#define ABL_BLTOUCH
+#define ABL_BLTOUCH
 //#define ABL_TOUCH_MI // Uncomment ABL_TOUCH_MI to use Touch-MI sensor by hotends.fr
 
-//#define CREALITY_ABL_MOUNT //Using creality ABL mount
+#define CREALITY_ABL_MOUNT //Using creality ABL mount
 //#define E3D_DUALFAN_MOUNT // Using HD Modular mount as above with 2 5015 blowers and sensor on the right
 //#define E3D_PROBEMOUNT_LEFT // Default is probe mounted to the right for E3D. Set this to invert.
 
@@ -103,7 +103,7 @@
  * Screen options
  */
 
-//#define OrigLCD // Upgraded mainboard with single cable Ender LCD
+#define OrigLCD // Upgraded mainboard with single cable Ender LCD
 //#define GraphicLCD //Full graphics LCD for Ender 4, CR-X or CR10SPro
 //#define Big_UI // Lightweight status screen, saves CPU cycles
 
@@ -133,7 +133,7 @@
    If a probe is enabled and nothing selected here, defaults to Bilinear
 */
 //#define ABL_BI
-//#define ABL_UBL
+#define ABL_UBL
 
 /*
    For melzi boards these options allow you to cusomize what you want to do.
@@ -286,7 +286,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "TinyMachines3D" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "TinyMachines3D, codyjacob, Ender 5 Plus" // Who made the changes.
 #define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
