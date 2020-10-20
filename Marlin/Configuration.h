@@ -79,7 +79,7 @@
    ac bed, leave both disabled
 */
 //#define BedAC
-#define BedDC
+//#define BedDC
 
 //#define SolidBedMounts //Removed a few LCD options to save some memory since not needed with solid mounts
 
