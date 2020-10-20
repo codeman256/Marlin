@@ -122,7 +122,7 @@
 //Sets thermistor based calculated beta values instead of lookup tables
 //#define ConfigurableThermistors
 
-//#define CrealityViewerKit // Reduces baud to 115200 for Creality viewer kit
+#define CrealityViewerKit // Reduces baud to 115200 for Creality viewer kit
 
 /*
    Choose bed leveling type here
