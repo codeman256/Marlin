@@ -1519,8 +1519,7 @@
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
 #if NONE(MachineCR10Orig, SKRMiniE3V2) || ENABLED(MelziHostOnly)
-  //#define S_CURVE_ACCELERATION
-  
+  #define S_CURVE_ACCELERATION
 #endif
 
 //===========================================================================
