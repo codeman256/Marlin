@@ -120,7 +120,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 115200
+#define BAUDRATE 250000
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
@@ -137,7 +137,7 @@
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
-#define MACHINE_UUID "8cd276e6-41c7-4439-8f4e-f188537ebdac"
+#define MACHINE_UUID "b4a2921f-4208-456a-ba3a-d54e9cae67e8" //my UUID -cj
 
 // @section extruder
 
