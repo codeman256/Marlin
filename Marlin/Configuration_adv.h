@@ -1935,7 +1935,7 @@
 #if ANY(SKR13, SKR14, SKR14Turbo, SKRPRO11, SKRMiniE3V2, MachineEnder3V2) || DISABLED(EXTENSIBLE_UI)
   #define BLOCK_BUFFER_SIZE 16
 #else
-  #define BLOCK_BUFFER_SIZE 8
+  #define BLOCK_BUFFER_SIZE 64
 #endif
 
 // @section serial
@@ -1947,7 +1947,7 @@
 #elif ANY(SKR13, SKR14, SKR14Turbo, SKRPRO11)
   #define BUFSIZE 8
 #else
-  #define BUFSIZE 4
+  #define BUFSIZE 32
 #endif
 // Transmission to Host Buffer Size
 // To save 386 bytes of PROGMEM (and TX_BUFFER_SIZE+3 bytes of RAM) set to 0.
@@ -1959,7 +1959,7 @@
 #if ANY(SKR13, SKR14, SKR14Turbo, SKRPRO11)
   #define TX_BUFFER_SIZE 32
 #else
-  #define TX_BUFFER_SIZE 0
+  #define TX_BUFFER_SIZE 32
 #endif
 
 // Host Receive Buffer Size
