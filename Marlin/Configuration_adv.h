@@ -1696,7 +1696,7 @@
   //#define EXTRA_LIN_ADVANCE_K // Enable for second linear advance constants
   #define LIN_ADVANCE_K 0.0    // Unit: mm compression per 1mm/s extruder speed
   //#define LA_DEBUG            // If enabled, this will generate debug information output over USB.
-  #define EXPERIMENTAL_SCURVE // Enable this option to permit S-Curve Acceleration
+  //#define EXPERIMENTAL_SCURVE // Enable this option to permit S-Curve Acceleration
 #endif
 
 // @section leveling
@@ -1935,7 +1935,7 @@
 #if ANY(SKR13, SKR14, SKR14Turbo, SKRPRO11, SKRMiniE3V2, MachineEnder3V2) || DISABLED(EXTENSIBLE_UI)
   #define BLOCK_BUFFER_SIZE 16
 #else
-  #define BLOCK_BUFFER_SIZE 32 //was 8
+  #define BLOCK_BUFFER_SIZE 16 //was 8
 #endif
 
 // @section serial
@@ -1947,7 +1947,7 @@
 #elif ANY(SKR13, SKR14, SKR14Turbo, SKRPRO11)
   #define BUFSIZE 8
 #else
-  #define BUFSIZE 16 //was 4
+  #define BUFSIZE 8 //was 4
 #endif
 // Transmission to Host Buffer Size
 // To save 386 bytes of PROGMEM (and TX_BUFFER_SIZE+3 bytes of RAM) set to 0.
@@ -1959,7 +1959,7 @@
 #if ANY(SKR13, SKR14, SKR14Turbo, SKRPRO11)
   #define TX_BUFFER_SIZE 32
 #else
-  #define TX_BUFFER_SIZE 16 //was 0
+  #define TX_BUFFER_SIZE 4 //was 0
 #endif
 
 // Host Receive Buffer Size
