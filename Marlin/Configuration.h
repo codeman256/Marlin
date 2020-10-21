@@ -103,7 +103,6 @@
  * Screen options
  */
 
-//
 //#define OrigLCD // Upgraded mainboard with single cable Ender LCD
 //#define GraphicLCD //Full graphics LCD for Ender 4, CR-X or CR10SPro
 //#define Big_UI // Lightweight status screen, saves CPU cycles
@@ -112,7 +111,7 @@
 //#define ForceCRXDisplay
 //#define Force10SProDisplay
 
-#define AddonFilSensor //Adds a filament runout sensor to the CR20 or Ender 4
+//#define AddonFilSensor //Adds a filament runout sensor to the CR20 or Ender 4
 //#define lerdgeFilSensor //Using lerdge filament sensor, which is opposite polarity to stock
 //#define DualFilSensors //Using dual filament sensors on XMax and YMAX
 //#define FilamentEncoder //Using filamet jam sensor such as the Bigtreetech Encoder wheel
@@ -1533,7 +1532,7 @@
  */
 #if NONE(MachineCR10Orig, SKRMiniE3V2) || ENABLED(MelziHostOnly)
 //  #define S_CURVE_ACCELERATION
-//commented out cause i dont want it -cj
+// disable S_Curve as its weird or not working properly.
 #endif
 
 //===========================================================================
