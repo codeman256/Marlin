@@ -1,4 +1,10 @@
-﻿## Creality CR10S Pro, CR-X, CR10 Max and Ender 5 Plus Touch Screen supported firmware
+# Note from Codeman256. 
+This config is for my Ender 5 plus with the following upgrades:
+- Capricorn tubing
+- All metal extruder
+currently i can only print from SD as the firmware left no space for TX/RX buffers so printing over USB(ie. Octoprint) does not work great.
+
+## Creality CR10S Pro, CR-X, CR10 Max and Ender 5 Plus Touch Screen supported firmware
 
 This branch adds support for the Creality touchscreen machines and was split off from the standard Creality branches due to specific custom changes not found upstream. This includes extensions to the EXTui framework among other smaller tweaks that we have been working towards getting submitted upstream. Machines supported here are :
 
