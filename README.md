@@ -2,7 +2,8 @@
 This config is for my Ender 5 plus with the following upgrades:
 - Capricorn tubing
 - All metal extruder
-currently i can only print from SD as the firmware left no space for TX/RX buffers so printing over USB(ie. Octoprint) does not work great.
+
+Currently I can only print from SD as the firmware left no space for TX/RX buffers so printing over USB(ie. Octoprint) does not work great.
 
 ## Creality CR10S Pro, CR-X, CR10 Max and Ender 5 Plus Touch Screen supported firmware
 
