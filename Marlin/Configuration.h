@@ -133,7 +133,7 @@
    If a probe is enabled and nothing selected here, defaults to Bilinear
 */
 //#define ABL_BI
-#define ABL_UBL
+//#define ABL_UBL
 
 /*
    For melzi boards these options allow you to cusomize what you want to do.
@@ -286,7 +286,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "TinyMachines3D, codyjacob, Ender 5 Plus" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "TinyMachines3D, Codeman256, Ender 5 Plus" // Who made the changes.
 #define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -1721,8 +1721,9 @@
   #endif
 #elif ENABLED(MicroswissDirectDrive) && ENABLED(ABL_BLTOUCH)
   #define NOZZLE_TO_PROBE_OFFSET { -45, -5, 0 }
+//This is the origianl spec
 #elif (ENABLED(ABL_BLTOUCH) && ENABLED(HotendStock))
-  #define NOZZLE_TO_PROBE_OFFSET { -41, -8, 0 }
+  #define NOZZLE_TO_PROBE_OFFSET { -55, -13, 0 } //orig --> 41, -8, 0 }
 #elif ((ANY(ABL_EZABL, ABL_NCSW)) && ENABLED(HotendStock))
   #if ENABLED(CREALITY_ABL_MOUNT)
     #define NOZZLE_TO_PROBE_OFFSET { -55, -15, 0 }
@@ -2505,6 +2506,7 @@
 #define PREHEAT_1_LABEL       "PLA"
 #define PREHEAT_1_TEMP_HOTEND 180
 #define PREHEAT_1_TEMP_BED     70
+
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "ABS"
