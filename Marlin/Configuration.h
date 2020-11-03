@@ -154,7 +154,7 @@
 
 //#define SKR13 // 32 bit board - assumes 2208 drivers
 //#define SKR14
-//#define SKR14Turbo
+#define SKR14Turbo
 //#define SKRPRO11
 
 // This board is NOT recommended and is HIGHLY advised against utilizing the expanded builds for.
@@ -193,7 +193,7 @@
 */
 //#define MeshFast
 //#define MeshStd
-//#define MeshFine
+#define MeshFine
 //#define MeshExtreme
 
 /*
